@@ -46,3 +46,5 @@ The initially showcased currencies are Canadian Dollar, US Dollar, Euro and Japa
 For each currency, you have the country's flag, the currency's symbol, the currency's name and the currency's conversion rate to the base currency.
 
 If you wish to remove some currencies, you can click on the "x" button. If you wish to add currencies to the screen, you can click the "Add Currencies" button and proceed to click the currencies you wish to view. The currencies that are already selected will be greyed out and no longer clickable.
+
+<img width="1440" alt="Screen Shot 2020-01-17 at 6 00 29 PM" src="https://user-images.githubusercontent.com/59456972/72652016-4a4f4800-3953-11ea-9470-c4f4fbd0ece3.png">
