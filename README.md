@@ -43,4 +43,6 @@ Once you open the HTML file, you will be brought to this screen:
 
 The initially showcased currencies are Canadian Dollar, US Dollar, Euro and Japanese Yen. The base currency is Canadian Dollar but it can be changed once you enter a number into the other currencies' input box.
 
+For each currency, you have the country's flag, the currency's symbol, the currency's name and the currency's conversion rate to the base currency.
+
 If you wish to remove some currencies, you can click on the "x" button. If you wish to add currencies to the screen, you can click the "Add Currencies" button and proceed to click the currencies you wish to view.
