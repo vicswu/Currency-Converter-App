@@ -1,0 +1,261 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url("back5.jpg");
+    color: rgb(255, 127, 80);
+}
+
+.container {
+    width: 500px;
+    margin: 20px auto;
+    user-select: none;
+    position: relative;
+}
+
+.date {
+    background-color: coral;
+    color: white;
+    text-align: right;
+    font-size: 0.75rem;
+    padding: 0.75rem 2rem 0.75rem 0;
+}
+
+.header {
+    background-color: white;
+    text-align: center;
+    padding: 1.75rem;
+}
+
+.header h1 {
+    font-size: 2.25rem;
+}
+
+ul.currencies {
+    height: calc(100vh - 40px - 100px - 40px - 58px);
+    background-color: white;
+    padding: 0 1.5rem 1rem 1.5rem;
+    overflow-y: auto;
+}
+
+ul.currencies li {
+    background-color: coral;
+    color: white;
+    border-radius: 5px;
+    list-style: none;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+ul.currencies li.base-currency {
+    background-color: rgba(0, 128, 0, 0.479);
+}
+
+ul.currencies li :last-child {
+    margin-bottom: 0;
+}
+
+.flag {
+    width: 60px;
+    height: 40px;
+    border: 1px solid white;
+    vertical-align: top;
+}
+
+.flag-swiss {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+}
+
+.info {
+    display: inline-block;
+    width: 78%;
+}
+
+.info .input span {
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 4rem;
+    text-align: center;
+}
+
+.info .input input {
+    font-size: 1.5rem;
+    width: 78%;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 0.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.info .currency-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-left: 4rem;
+}
+
+.info .base-currency-rate {
+    font-size: 0.8rem;
+    margin-left: 4rem;
+}
+
+ul.currencies li .close-first {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 0.5rem;
+    font-size: 2rem;
+    color: tomato;
+    cursor: pointer;
+}
+
+ul.currencies li .close-first:hover {
+    color: rgb(248, 37, 0);
+}
+
+ul.currencies li .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 0.5rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+ul.currencies li .close:hover {
+    color: black;
+}
+
+ul.currencies::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+ul.currencies::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+ul.currencies::-webkit-scrollbar-thumb {
+    background-color: coral;
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent)
+}
+
+ul.extra-currency {
+    position: absolute;
+    bottom: 54px;
+    left: 0;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 0;
+    overflow-y: auto;
+    transition: all 0.25s;
+}
+
+ul.extra-currency li {
+    list-style: none;
+    padding: 0.75rem;
+    border-bottom: 3px solid white;
+}
+
+ul.extra-currency li.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+ul.extra-currency li .flag {
+    width: 3rem;
+    height: 2rem;
+    vertical-align: middle;
+}
+
+ul.extra-currency li .flag-swiss {
+    width: 3rem;
+    height: 2rem;
+    vertical-align: middle;
+}
+
+ul.extra-currency li span {
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.extra-currency-btn {
+    background-color: rgb(255, 127, 80);
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-top: 3px white;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    position: relative;
+}
+
+.extra-currency-btn.open {
+    background-color: rgb(63, 128, 212);
+}
+
+.extra-currency-btn.open+ul.extra-currency {
+    height: calc(100vh - 40px - 100px - 40px - 55px);
+}
+
+.extra-currency-btn.open+ul.extra-currency li:hover {
+    background-color: grey;
+}
+
+@media (max-width:600px) {
+    html {
+        font-size: 14px;
+    }
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    ul.currencies {
+        height: calc(100vh - 83px - 34px -51px);
+    }
+    .header h1 {
+        font-size: 2rem;
+    }
+    .flag {
+        width: 3rem;
+        height: 2rem;
+    }
+    .info .input span {
+        font-size: 1.25rem;
+        width: 3.5rem;
+    }
+    .info .input input {
+        font-size: 1.25rem;
+        width: 76%;
+    }
+    .info .currency-name {
+        margin-left: 3.5rem;
+    }
+    .info .base-currency-rate {
+        margin-left: 3.5rem;
+    }
+    ul.extra-currency {
+        bottom: 48px;
+        height: calc(100vh - 80px - 51px);
+    }
+}
