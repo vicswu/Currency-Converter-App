@@ -7,6 +7,8 @@ Created this application using HTML, CSS for styling details and JavaScript for 
 
 Retrieved the necessary currency conversion rates from a RESTful API (https://exchangeratesapi.io/) in order to get updated rates.
 
+Used Javascript to show the current date which will change everyday.
+
 Due to the sheer amount of international currencies, I only selected 14 of the most widely used and important currencies.
 
 1. Canadian Dollar
