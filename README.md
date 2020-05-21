@@ -1,5 +1,6 @@
 # Currency-Converter-App
 Simple Currency Converter Using Up-to-date Conversion Rates
+Click [here](file:///Users/victorswu/Desktop/Currency%20Converter/index.html) to give it a try!
 ____________________________________________________________
 
 
